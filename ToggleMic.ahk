@@ -1,3 +1,11 @@
+; ToggleMic.ahk
+;
+; Author: Peter Provost
+; Git Repo: http://github.com/PProvost/AutoHotKey
+; 
+; Description: Toggles the microphone on and off when mouse 
+; button 4 is pressed
+
 #NoEnv
 #SingleInstance force
 

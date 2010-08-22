@@ -7,6 +7,8 @@ Scripts:
 * **PushToTalk.ahk** - Push the button to open the mic, release it to mute.
 * **QuickConsole.ahk** - Used with Console.exe to make a Quake-like popup console
 * **Shortcuts.ahk** - My main personal scripts file. Contains all kind of little shortcuts I use every day.
+* **SoundCardAnalysis.ahk** - Displays your sound capabilities, devices, etc. (From the AHK SoundSet documentation)
+* **ToggleMic.ahk** - Toggles the mic mute when mouse button 4 is pressed.
 
 Disclaimer: I did not write all these scripts. Many were collected from forum posts or other sources and are simply here so I don't lose them.
 
