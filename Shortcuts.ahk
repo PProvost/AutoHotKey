@@ -1,3 +1,5 @@
+#SingleInstance force
+
 ;----------------------------------------------------------------
 ; WIN+SHIFT+V opens Ventrilo
 ;------------------------------------------------------------------------
@@ -13,12 +15,12 @@
 ;------------------------------------------------------------------------
 ^!s::
    PostMessage 0x0112, 0xF140, 0,, Program Manager ; 0x0112 is WM_SYSCOMMAND -- 0xF140 is SC_SCREENSAVE
-Return
+return
 
 ;------------------------------------------------------------------------
-; Ctrl+Space - Always on top current window
+; Ctrl+Alt+Space - Always on top current window
 ;------------------------------------------------------------------------
-^SPACE:: Winset, Alwaysontop, , A
+^!SPACE:: Winset, Alwaysontop, , A
 
 ;------------------------------------------------------------------------
 ; Alt+F3 toggles maximize, whether it is enabled or not
@@ -53,3 +55,14 @@ ToggleAutoHideTaskBar()
              ,"UInt", ( ABM_SETSTATE := 0xA )
              ,"UInt", &APPBARDATA )
 }
+
+;------------------------------------------------------------------------
+; Ctrl+Alt+NumpadSub - Resize the current window to 350x700
+; Meant to be used with IM windows
+;------------------------------------------------------------------------
+^!NumpadSub:: 
+	WinGet, hwnd, ID, A
+	WinGetPos, X, Y, Width, Height, ahk_id %hwnd%
+	WinMove, ahk_id %hwnd%,, X, Y, 350, 700
+return
+
