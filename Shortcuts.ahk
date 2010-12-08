@@ -63,6 +63,6 @@ ToggleAutoHideTaskBar()
 ^!NumpadSub:: 
 	WinGet, hwnd, ID, A
 	WinGetPos, X, Y, Width, Height, ahk_id %hwnd%
-	WinMove, ahk_id %hwnd%,, X, Y, 350, 700
+	WinMove, ahk_id %hwnd%,, X, Y, 375, 700
 return
 
