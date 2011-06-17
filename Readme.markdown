@@ -3,6 +3,7 @@ see [the AutoHotKey website](http://www.autohotkey.com/).
 
 Scripts:
 
+* **COD-Toolbox.ahk** - A script by zygorator for automating some things in Call of Duty games
 * **DisableTouchPad.ahk** - For use on laptops with a touchpad, it will disable the touchpad for 0.5sec after you type any key. Great if, like me, you accidentally touch it while typing.
 * **PushToTalk.ahk** - Push the button to open the mic, release it to mute.
 * **QuickConsole.ahk** - Used with Console.exe to make a Quake-like popup console

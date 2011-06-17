@@ -102,7 +102,6 @@ Hotkey,~*%recoil_toggle%,rcoiltoggle
 Hotkey,~*%anim_cancel%,animcancel
 Hotkey,~*%quick_knife%, quickKnife
 
-
 lazor:
 Loop
 {
