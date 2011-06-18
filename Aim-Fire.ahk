@@ -10,21 +10,22 @@ GroupAdd,gamewindow ,ahk_class CoD4			;COD 4: MW
 GroupAdd,gamewindow ,ahk_class CoD-WaW		;COD 5: WAW
 GroupAdd,gamewindow ,ahk_class IW4			;COD 6: MW2
 GroupAdd,gamewindow ,ahk_class CoDBlackOps	;COD 7: BO
+#IfWinActive ahk_group gamewindow
 
 ;--- Bindings ---
 fire = LButton
 aim = RButton
 zoomfire = MButton
 
-;------------------------------------------------------------------
-#IfWinActive ahk_group gamewindow
+; --- Setup hotkey ---
+Hotkey,~*%zoomfire%,do_ZoomFire
+return
 
-~*MButton::
+do_ZoomFire:
 {
-	GetKeyState, RButtonState, RButton, P
-
 	; If we've not already got RButton down, press and hold it
-	if RButtonState = U 
+	GetKeyState, aimstate, %aim%, P
+	if aimstate = U 
 	{
 		Sleep 35
 		Send { %aim% down }
@@ -41,11 +42,14 @@ zoomfire = MButton
 	Sleep 35
 	Click, left
 
-	if RButtonState = U
+	; If we clicked it down, click it back up
+	if aimstate = U
 	{
 		Sleep 35
 		Click, right
 	}
+
+	return
 }
 
 
