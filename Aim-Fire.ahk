@@ -1,6 +1,6 @@
 #SingleInstance
-#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
-SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
+#NoEnv
+SendMode, Input
 
 ;------------------------------------------------------------------
 ;Add your games window class name to this list to activate the script for that game
@@ -40,13 +40,13 @@ do_ZoomFire:
 
 	; Cleanup the mess by clicking everything LOL
 	Sleep 35
-	Click, left
+	Send { %fire%  }
 
 	; If we clicked it down, click it back up
 	if aimstate = U
 	{
 		Sleep 35
-		Click, right
+		Send { %aim%  }
 	}
 
 	return
