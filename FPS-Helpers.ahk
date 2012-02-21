@@ -14,6 +14,7 @@ GroupAdd,gamewindow ,ahk_class CoD4			;COD 4: MW
 GroupAdd,gamewindow ,ahk_class CoD-WaW		;COD 5: WAW
 GroupAdd,gamewindow ,ahk_class IW4			;COD 6: MW2
 GroupAdd,gamewindow ,ahk_class CoDBlackOps	;COD 7: BO
+GroupAdd,gamewindow ,ahk_class IW5		; COD 8: MW3
 
 ;------------------------------------------------------------------
 #IfWinActive ahk_group gamewindow
@@ -100,7 +101,7 @@ Hotkey,~*%recoil_down%,rcoildown
 Hotkey,~*%recoil_up%,rcoilup
 Hotkey,~*%recoil_toggle%,rcoiltoggle
 Hotkey,~*%anim_cancel%,animcancel
-Hotkey,~*%quick_knife%, quickKnife
+; Hotkey,~*%quick_knife%, quickKnife
 
 lazor:
 Loop

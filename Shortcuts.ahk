@@ -10,6 +10,8 @@
 ;------------------------------------------------------------------------
 #w::Run C:\World of Warcraft\Launcher.exe
 
+#s::Run SnippingTool.exe
+
 ;----------------------------------------------------------------
 ; Ctrl+Alt+S: screensaver launcher
 ;------------------------------------------------------------------------
@@ -25,18 +27,31 @@ return
 ;------------------------------------------------------------------------
 ; Alt+F3 toggles maximize, whether it is enabled or not
 ;------------------------------------------------------------------------
-!F3:: ;Maximize/Restore Window
-WinGet MX, MinMax, A
-if MX
+!F3::ToggleFullScreen()
+ToggleFullScreen()
 {
-	WinRestore A
-	WinSet, Style, +0xC00000, A
+	WinGet, MX, MinMax, A
+	if MX
+	{
+		WinSet, Style, +0xC00000, A
+		WinRestore
+	}
+	else 
+	{
+		WinActivate
+		WinSet, Style, -0xC00000, A
+		WinMove, , , 0, 0
+		WinMaximize
+	}
+	return
 }
-else 
-{
-	WinMaximize A
-	WinSet, Style, -0xC00000, A
-}
+
+;------------------------------------------------------------------------
+; Ctrl+Alt+F - Really, REALLY force fullscreen and borderless
+;------------------------------------------------------------------------
+!^f::
+WinSet, Style, -0xC40000, A
+WinMove, A, , 0, 0, 1680, 1050
 return
 
 ;------------------------------------------------------------------------
