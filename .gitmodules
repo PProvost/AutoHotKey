@@ -1,0 +1,3 @@
+[submodule "WindowPadX"]
+	path = WindowPadX
+	url = git@github.com:PProvost/WindowPadX.git
