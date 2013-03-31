@@ -5,11 +5,13 @@
 ;------------------------------------------------------------------------
 #+v::Run C:\Program Files\Ventrilo\Ventrilo.exe
 
-;----------------------------------------------------------------
-; WIN+W opens WoW
-;------------------------------------------------------------------------
-#w::Run C:\World of Warcraft\Launcher.exe
+; Win+Q launches Lync/Communicator
+#q::Run lync.exe
 
+; WIN+W opens WoW
+#w::Run "C:\World of Warcraft\World of Warcraft Launcher.exe"
+
+; Win+S runs snipping tool
 #s::Run SnippingTool.exe
 
 ;----------------------------------------------------------------
