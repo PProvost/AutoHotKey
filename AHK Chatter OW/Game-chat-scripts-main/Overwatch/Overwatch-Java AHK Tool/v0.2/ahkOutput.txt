@@ -1,0 +1,56 @@
+#NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases. 
+; #Warn  ; Enable warnings to assist with detecting common errors. 
+SendMode Input  ; Recommended for new scripts due to its superior speed and reliability. 
+SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
+
+^K::
+Send, I'm{space}
+Send, TimThePlatMan,{space}
+Send, and{space}
+Send, this{space}
+Send, is{space}
+Send, my{space}
+Send, ELO.{space}
+Send, I{space}
+Send, boost{space}
+Send, it{space}
+Send, with{space}
+Send, my{space}
+Send, old{space}
+Send, man{space}
+Send, lassiz,{space}
+Send, and{space}
+Send, my{space}
+Send, son,{space}
+Send, Big{space}
+Send, moon.{space}
+Send, Every{space}
+Send, game{space}
+Send, I{space}
+Send, play{space}
+
+Sleep, 3000
+Send, {tab}{enter}
+Sleep, 4000
+Send, {tab}{enter}
+Sleep, 3000
+Send, has{space}
+Send, throws{space}
+Send, and{space}
+Send, tilt.{space}
+Send, One{space}
+Send, thing{space}
+Send, I've{space}
+Send, learned{space}
+Send, after{space}
+Send, 21{space}
+Send, years{space}
+Send, -{space}
+Send, you{space}
+Send, never{space}
+Send, know{space}
+Send, how{space}
+Send, I'll{space}
+Send, throw{space}
+Send, this{space}
+Send, game.{space}
